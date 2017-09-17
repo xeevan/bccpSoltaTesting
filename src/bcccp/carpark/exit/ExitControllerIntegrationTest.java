@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bcccp.carpark.entry;
+package bcccp.carpark.exit;
 
 /**
  *
@@ -11,6 +11,6 @@ package bcccp.carpark.entry;
  */
 public class ExitControllerIntegrationTest {
     public static void main(String[] args){
-    
+        // TODO
     }
 }
