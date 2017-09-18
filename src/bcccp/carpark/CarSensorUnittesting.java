@@ -13,6 +13,8 @@ public class CarSensorUnittesting {
     public static void main(String[] args){
        System.out.println("Creating an instance of carsensor class...");
        CarSensor cs= new CarSensor("Sunil", 100,100);
+       System.out.println("Testing if the car is detetected true in carSensor class...");
+       cs.carDetected=true;
        System.out.println("cs an instance of CarSensor class created...");
        System.out.println("Testing the getId method of carSensor class");
        System.out.println(cs.getId());
