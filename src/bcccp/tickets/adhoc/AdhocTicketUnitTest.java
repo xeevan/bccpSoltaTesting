@@ -53,6 +53,5 @@ public class AdhocTicketUnitTest {
         
         //tests the getter method getEntryDateTime() of the Class
         System.out.println("The exit date and time is "+adhocTic.getExitDateTime());
-        System.out.println(new Date());
     }
 }
