@@ -17,7 +17,7 @@ import java.awt.event.ActionEvent;
 public class CarSensor extends JFrame implements ICarSensor {
 
 	private JPanel contentPane;
-	private boolean carDetected;
+	boolean carDetected;
 	private String detectorId;
 	
 	private List<ICarSensorResponder> responders;

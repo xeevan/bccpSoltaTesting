@@ -17,5 +17,7 @@ public class CarSensorUnittesting {
        System.out.println("Testing the getId method of carSensor class");
        System.out.println(cs.getId());
        System.out.println("Tested successfully..");
+       System.out.println("Testing the carIsDetected method in carSensor class...");
+       System.out.println(cs.carIsDetected());
     }
 }
