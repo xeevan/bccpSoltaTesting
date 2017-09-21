@@ -23,6 +23,7 @@ import bcccp.tickets.season.UsageRecordFactory;
 public class PaystationControllerTest {
     public static void main(String[] args){
     
+    
     IAdhocTicketFactory adhocTicketFactory= new AdhocTicketFactory();
     IAdhocTicketDAO adhocTicketDAO = new AdhocTicketDAO(adhocTicketFactory);
     IUsageRecordFactory factory= new UsageRecordFactory();
@@ -35,6 +36,7 @@ public class PaystationControllerTest {
     psc.setState(psc.teststate);
     psc.ticketInserted("Abc123");
     System.out.println("Barcode printed ");
+    System.out.println("Barcode printed A3");
     //psc.ticketPaid();
     //psc.ticketTaken();
     

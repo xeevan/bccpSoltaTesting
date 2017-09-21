@@ -15,11 +15,12 @@ public class PaystationUITest {
     public static void main(String[] args){
     
   
-    PaystationUI pui=new PaystationUI(20, 30);
+    PaystationUI pu=new PaystationUI(20, 30);
         
-    pui.beep();
-    pui.display("Display message");
-    pui.log("Pramesh");
+    pu.beep();
+    pu.display("Display message");
+    pu.log("Pramesh");
+    //pu.log("Pramesh");
    }
 } 
     
