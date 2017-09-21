@@ -25,7 +25,7 @@ import bcccp.tickets.season.UsageRecordFactory;
  */
 public class ExitControllerIntegrationTest {
     public static void main(String[] args){
-                
+                       
         IAdhocTicketFactory adhocticketfactory = new AdhocTicketFactory();
         IAdhocTicketDAO iadhocticketdao = new AdhocTicketDAO(adhocticketfactory);
         
@@ -51,6 +51,13 @@ public class ExitControllerIntegrationTest {
         
         //tests the ticketTaken method
         exitcontroller.ticketTaken();
+        
+        //tests the isAdhocTicket() method
+        boolean isadhocticket = exitcontroller.isAdhocTicket("A3");
+        System.out.println("Is this the adhoc Ticket??"+isadhocticket);
+        
+        //tests the setState() method
+        exitcontroller.setState(exitcontroller.teststate);
     }   
     
 }

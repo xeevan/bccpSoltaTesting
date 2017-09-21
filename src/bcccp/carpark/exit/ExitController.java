@@ -11,8 +11,11 @@ public class ExitController
 		implements ICarSensorResponder,
 		           IExitController {
 	
-	private enum STATE { IDLE, WAITING, PROCESSED, REJECTED, TAKEN, EXITING, EXITED, BLOCKED } 
+	public enum STATE { IDLE, WAITING, PROCESSED, REJECTED, TAKEN, EXITING, EXITED, BLOCKED } 
 	
+        //test variable 
+        public STATE teststate = STATE.PROCESSED;
+        
 	private STATE state;
 	private STATE prevState;
 	private String message;
@@ -125,9 +128,8 @@ public class ExitController
 		
 	}
 
-	
-	
-	private void setState(STATE newState) {
+	//changed the private method to public for testing purpose
+	public void setState(STATE newState) {
 		switch (newState) {
 		
 		case BLOCKED: 
@@ -178,6 +180,7 @@ public class ExitController
 			if (!is.carIsDetected()) {
 				setState(STATE.IDLE);
 			}
+                        System.out.println("PROCESSED:"+message);
 			break;
 			
 		case PROCESSED: 
@@ -190,6 +193,9 @@ public class ExitController
 			if (!is.carIsDetected()) {
 				setState(STATE.IDLE);
 			}
+                        //test console message
+                        System.out.println("The ticket has been processed "+message);
+                        
 			break;
 			
 		case REJECTED: 
@@ -239,8 +245,8 @@ public class ExitController
 	}
 
 	
-	
-	private boolean isAdhocTicket(String barcode) {
+	//changed the private method to public for testing purpose
+	public boolean isAdhocTicket(String barcode) {
 		return barcode.substring(0,1).equals("A");
 	}
 	
