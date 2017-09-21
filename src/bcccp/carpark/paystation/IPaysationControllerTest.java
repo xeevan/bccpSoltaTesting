@@ -10,6 +10,5 @@ package bcccp.carpark.paystation;
  *
  * @author Pramesh
  */
-public class IPaysationControllerTest {
-    
+public class IPaysationControllerTest {  
 }

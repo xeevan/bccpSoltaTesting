@@ -29,14 +29,14 @@ public class PaystationController
 	}
 
 	
-	
-	private void log(String message) {
+	//change from private to public for test purpose
+	public void log(String message) {
 		System.out.println("EntryController : " + message);
 	}
 
 	
 	
-	private void setState(STATE newState) {
+	public void setState(STATE newState) {
 		switch (newState) {
 		
 		case IDLE: 
