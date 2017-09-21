@@ -7,7 +7,7 @@ public class PaystationController
 		implements IPaystationController {
 	
 	private enum STATE { IDLE, WAITING, REJECTED, PAID } 
-	
+	public STATE teststate=STATE.IDLE;
 	private STATE state_;
 	
 	private IPaystationUI ui_;
