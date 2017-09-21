@@ -151,8 +151,8 @@ public class PaystationUI extends JFrame implements IPaystationUI {
 	}
 	
 	
-	
-	private void ticketInserted() {
+	//changed privae to public for testing
+	public void ticketInserted() {
 		String ticketStr = barcodeTextField.getText();
 		controller.ticketInserted(ticketStr);	
 	}
@@ -187,8 +187,8 @@ public class PaystationUI extends JFrame implements IPaystationUI {
 	}
 
 	
-	
-	private void log(String message) {
+	//changed private to public for testing
+	public void log(String message) {
 		System.out.println("EntryUI : " + message);
 	}
 

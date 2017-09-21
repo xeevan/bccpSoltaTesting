@@ -5,10 +5,23 @@
  */
 package bcccp.carpark.paystation;
 
+import bcccp.carpark.Carpark;
+
 /**
  *
  * @author Pramesh
  */
 public class PaystationUITest {
+    public static void main(String[] args){
     
-}
+  
+    PaystationUI pui=new PaystationUI(20, 30);
+        
+    pui.beep();
+    pui.display("Display message");
+    pui.log("Pramesh");
+   }
+} 
+    
+    
+    
