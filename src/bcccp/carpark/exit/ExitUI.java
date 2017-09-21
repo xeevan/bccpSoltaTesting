@@ -24,7 +24,7 @@ public class ExitUI extends JFrame implements IExitUI {
 	private JPanel contentPane;
 	private JTextField displayTextField;
 	private JTextField ticketReaderTextField;
-	private IExitController controller;
+	public IExitController controller; //changed the private variable to public for test purpose
 
 	
 	
