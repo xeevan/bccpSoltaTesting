@@ -34,8 +34,9 @@ public class PaystationControllerTest {
     psc.log("log method test");
     psc.setState(psc.teststate);
     psc.ticketInserted("Abc123");
-    psc.ticketPaid();
-    psc.ticketTaken();
+    System.out.println("Barcode printed ");
+    //psc.ticketPaid();
+    //psc.ticketTaken();
     
     
     }
