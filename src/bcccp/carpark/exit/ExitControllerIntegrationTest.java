@@ -36,10 +36,21 @@ public class ExitControllerIntegrationTest {
         
         Carpark carpark = new Carpark("Early Bird", 50, iadhocticketdao, iseasonticketdao);
         IGate igate = new Gate(20,20);
-        ICarSensor insidecarsensor = new CarSensor("earlybird123",10,10);
-        ICarSensor outsidecarsensor = new CarSensor("earlybird123",15,15);
+        ICarSensor insidecarsensor = new CarSensor("Car123",10,10);
+        ICarSensor outsidecarsensor = new CarSensor("Car123",15,15);
         IExitUI iexitui = new ExitUI(40,40);
         
+        //tests the creation of ExitController instance
         ExitController exitcontroller = new ExitController(carpark,igate,insidecarsensor,outsidecarsensor,iexitui);
-    }
+        
+        //tests the carEventDetected method
+        exitcontroller.carEventDetected("Car123", true);
+        
+        //tests the ticketInserted method
+        exitcontroller.ticketInserted("A5");
+        
+        //tests the ticketTaken method
+        exitcontroller.ticketTaken();
+    }   
+    
 }
