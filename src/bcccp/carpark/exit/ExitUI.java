@@ -22,8 +22,8 @@ import javax.swing.UIManager;
 public class ExitUI extends JFrame implements IExitUI {
 
 	private JPanel contentPane;
-	private JTextField displayTextField;
-	private JTextField ticketReaderTextField;
+	public JTextField displayTextField; //changed the private variable to public for test purpose
+	public JTextField ticketReaderTextField; //changed the private variable to public for test purpose
 	public IExitController controller; //changed the private variable to public for test purpose
 
 	
@@ -136,15 +136,15 @@ public class ExitUI extends JFrame implements IExitUI {
 	}
 
 	
-	
-	private void readTicket() {
+	//changed private method to public for testing purpose
+	public void readTicket() {
 		String ticketStr = ticketReaderTextField.getText();
 		controller.ticketInserted(ticketStr);	
 	}
 	
 	
-	
-	private void takeTicket() {
+	//changed private method to public for testing purpose
+	public void takeTicket() {
 		controller.ticketTaken();
 		ticketReaderTextField.setText("");
 	}

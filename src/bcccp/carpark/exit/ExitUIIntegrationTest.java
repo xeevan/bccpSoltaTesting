@@ -52,7 +52,28 @@ public class ExitUIIntegrationTest {
         //test the registerController() method
         exitui.deregisterController();
         System.out.println("Successful Test:Controller assigned null for ExitUI");
-        System.out.println(exitui.controller);
+        System.out.println("The value of controller is "+exitui.controller);
+        
+        //test the display() method
+        exitui.display("This is the message to be displayed");
+        System.out.println("Successful Test: "+exitui.displayTextField.getText());
+        
+//        //test the readTicket() method
+//        exitui.readTicket();
+//        System.out.println("Successful Test: readTicket() method invoked");
+        
+//        //test the takeTicket() method
+//        exitui.takeTicket();
+//        System.out.println("Successful Test: takeTicket() method invoked");
+        
+        //test the discardTicket() method
+        exitui.discardTicket();
+        System.out.println("Successful Test: discardTicket() method invoked");
+        System.out.println("This value read by Ticket Reader is :"+exitui.ticketReaderTextField.getText());
+        
+        //test the beep() method
+        exitui.beep();
+        System.out.println("Successful Test: beep sound generated..");
     }   
     
 }
