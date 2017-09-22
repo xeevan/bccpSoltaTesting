@@ -52,7 +52,7 @@ public class EntryController
 
 	
 	
-	private void log(String message) {
+	void log(String message) {
 		System.out.println("EntryController : " + message);
 	}
 
