@@ -21,7 +21,7 @@ public class PaystationUITest {
     pu.display("Display message");
     pu.log("Pramesh");
     pu.printTicket("cp1", 22, 15, 200, 40, "A3");
-    pu.pay();
+    //pu.pay();
     //pu.log("Pramesh");
    }
 } 
