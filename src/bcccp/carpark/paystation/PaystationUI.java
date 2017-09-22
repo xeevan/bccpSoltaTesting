@@ -173,7 +173,7 @@ public class PaystationUI extends JFrame implements IPaystationUI {
 	
 	
 	
-	private void pay() {
+	public void pay() {
 		log("pay : calling ticketPaid");
 		controller.ticketPaid();	
 	}
