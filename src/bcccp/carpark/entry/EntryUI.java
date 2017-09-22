@@ -164,14 +164,14 @@ public class EntryUI extends JFrame implements IEntryUI {
 	
 	
 	
-	private void pushButton() {
+	void pushButton() {
 		log("pushButton : calling button pushed");
 		controller.buttonPushed();	
 	}
 
 	
 	
-	private void insertTicket() {
+	void insertTicket() {
 		String ticketStr = seasonTicketTextField.getText();
 		controller.ticketInserted(ticketStr);	
 	}
