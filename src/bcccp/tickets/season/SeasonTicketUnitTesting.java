@@ -33,6 +33,10 @@ public class SeasonTicketUnitTesting {
         System.out.println("Testing seasonTicket getStartValidPeriod method: "+seasonTicket.getStartValidPeriod());
         System.out.println("Testing seasonTicket getStartValidPeriod method: "+seasonTicket.getEndValidPeriod());
         
+        //Test start and end Time in Date Time Format
+        System.out.println("Testing seasonTicket getStartValidPeriod in Date Timr Format: "+convertTime(seasonTicket.getStartValidPeriod()));
+        System.out.println("Testing seasonTicket getStartValidPeriod in Date Timr Format: "+convertTime(seasonTicket.getEndValidPeriod()));
+        
         //create usage record 
         IUsageRecord usageRecord = new UsageRecord(seasonTicket.getId(), seasonTicket.getStartValidPeriod());
         
@@ -50,8 +54,8 @@ public class SeasonTicketUnitTesting {
         
          //Testing seasonTicket getUsageRecords() method
         System.out.println("Testing seasonTicket inUse() method: "+seasonTicket.getUsageRecords());
-        
-        
+        //Testing seasonTicket toString() method
+        System.out.println(seasonTicket.toString());
         
         
          
