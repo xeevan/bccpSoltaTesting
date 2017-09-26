@@ -10,7 +10,7 @@ import java.util.Calendar;
 
 /**
  *
- * @author IMM
+ * @author 11629800 Iranga Mendis
  */
 public class UsageRecordFactoryUnitTest {
     public static void main(String[] args) throws NullPointerException {
