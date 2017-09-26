@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class SeasonTicket implements ISeasonTicket {
+public class SeasonTicket implements ISeasonTicket  {
 	
 	private List<IUsageRecord> usages;
 	private IUsageRecord currentUsage = null;
